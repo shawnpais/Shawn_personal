@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Albina, Will You Be My Girlfriend?</title>
+    <style>
+        body {
+            background: url('https://source.unsplash.com/1920x1080/?romantic,hearts,couple') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .card {
+            background-color: rgba(255, 255, 255, 0.85);
+            padding: 40px 50px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 2s ease-in-out;
+            position: relative;
+            z-index: 1;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #e60073;
+            animation: pulse 2s infinite;
+        }
+
+        p {
+            font-size: 1.4rem;
+            margin: 20px 0;
+            color: #333;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        button {
+            padding: 12px 25px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 1.1rem;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+
+        .yes {
+            background-color: #e60073;
+            color: white;
+            box-shadow: 0 4px 15px rgba(230, 0, 115, 0.5);
+        }
+
+        .no {
+            background-color: #fbc2eb;
+            color: #333;
+            box-shadow: 0 4px 15px rgba(251, 194, 235, 0.5);
+        }
+
+        button:hover {
+            transform: scale(1.2);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.1);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <h1>Albina, Will You Be My Girlfriend?</h1>
+        <p>You make my world brighter every day. I can't imagine life without your smile. Will you make me the happiest
+            person alive?</p>
+        <div class="buttons">
+            <button class="yes"
+                onclick="alert('Yay! I can\u2019t wait for our journey together! \u2764\ufe0f')">Yes</button>
+            <button class="no" onclick="alert('Oh no! But I\u2019ll always cherish you! \ud83d\ude22')">No</button>
+        </div>
+    </div>
+</body>
+
+</html>
